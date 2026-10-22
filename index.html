@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kumari Palak – Portfolio for AI Generalist (Design), Ather Energy</title>
+<meta name="description" content="Portfolio of Kumari Palak, final-year CSE student building full-stack and AI products.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <a class="brand" href="#home">Kumari Palak</a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav id="menu" aria-label="Main">
+    <a href="#about">About</a><a href="#projects">Projects</a><a href="#concept">EV concept</a>
+    <a href="#skills">Skills</a><a href="#process">Process</a><a href="#contact" class="pill">Contact</a>
+  </nav>
+</header>
+<main id="main">
+<section id="home" class="hero wrap">
+  <div>
+    <p class="kicker">Application for AI Generalist (Design), Ather Energy</p>
+    <h1>I build software that explains itself to the person using it.</h1>
+    <p class="lead">Final-year Computer Science student working across React, Spring Boot and machine learning. I am looking for a role where engineering, AI and design meet.</p>
+    <div class="actions"><a class="btn" href="#projects">See my projects</a><a class="btn ghost" href="#contact">Get in touch</a></div>
+  </div>
+  <figure class="gauge" aria-label="Decorative range gauge">
+    <svg viewBox="0 0 220 140" role="img" aria-label="Decorative battery gauge">
+      <path d="M20 120 A90 90 0 0 1 200 120" class="track"/>
+      <path d="M20 120 A90 90 0 0 1 200 120" class="fill" pathLength="100"/>
+      <text x="110" y="100" text-anchor="middle" class="g-big">Ready</text>
+      <text x="110" y="124" text-anchor="middle" class="g-small">to ride into Ather</text>
+    </svg>
+  </figure>
+</section>
+
+<section id="about" class="wrap split">
+  <h2>About me</h2>
+  <div>
+    <p>I am an IV-year B.Tech Computer Science and Engineering student at SRM Institute of Science and Technology (KTR Campus), with a GPA of 9.54/10. I completed a software engineering internship at Truminds Software Systems, where I built an event booking platform.</p>
+    <p>I like projects where a system has to be both correct and understandable: a scheduler that never runs a job twice, or a prediction that shows the reasons behind it. I am interested in sustainable mobility and want to learn how AI can make electric vehicles simpler to live with.</p>
+    <p class="ph">[PLACEHOLDER: add 1–2 sentences on why Ather Energy and what draws you to electric two-wheelers, in your own words.]</p>
+  </div>
+</section>
+
+<section id="projects" class="wrap">
+  <h2>Featured projects</h2>
+  <p class="sub">Each card follows the same story: the problem, what I built, and what I learned. Text in brackets is for you to complete.</p>
+  <div id="project-list" class="cards"></div>
+</section>
+
+<section id="concept" class="wrap concept">
+  <div>
+    <span class="tag warn">Concept project – not a built or shipped product</span>
+    <h2>EV companion app concept</h2>
+    <p>A proposed mobile app for everyday electric riders. It answers four questions quickly: how much battery is left, how far can I go, where can I charge, and will this trip work?</p>
+    <ul class="plain">
+      <li><strong>Battery status:</strong> one clear number and colour state.</li>
+      <li><strong>Estimated range:</strong> shown as a distance, with the assumption behind it.</li>
+      <li><strong>Charging stations:</strong> nearby options sorted by distance.</li>
+      <li><strong>Trip planning:</strong> says plainly if a charge stop is needed.</li>
+    </ul>
+    <p class="note">Try the prototype on the right. It uses a made-up 1.4 km per 1% rule for demonstration only, not real vehicle data.</p>
+  </div>
+  <div class="phone" aria-label="Interactive concept prototype">
+    <label for="bat">Battery: <output id="batOut">62</output>%</label>
+    <input id="bat" type="range" min="5" max="100" value="62">
+    <div class="meter"><span id="meterFill"></span></div>
+    <p class="big"><span id="range">87</span> km <small>estimated range (sample)</small></p>
+    <label for="trip">Trip distance (km)</label>
+    <input id="trip" type="number" min="1" value="60">
+    <p id="tripMsg" class="msg" role="status"></p>
+    <h3>Nearby charging (sample)</h3>
+    <ul class="plain st"><li>Station A <span>[sample] 1.2 km</span></li><li>Station B <span>[sample] 3.5 km</span></li></ul>
+  </div>
+</section>
+
+<section id="skills" class="wrap">
+  <h2>AI and design skills</h2>
+  <p class="sub">Only skills I have used in projects or listed on my resume.</p>
+  <div class="cards three">
+    <article class="card"><h3>AI and machine learning</h3><p>Scikit-learn, TensorFlow, basic computer vision. Compared Logistic Regression and Random Forest in my placement predictor.</p><p>Certifications: Oracle Cloud Infrastructure 2025 Generative AI Professional; AWS Academy Generative AI Foundations; MongoDB Retrieval-Augmented Generation (RAG).</p></article>
+    <article class="card"><h3>Interface building</h3><p>React.js, TypeScript, Redux, HTML5, CSS3, Tailwind CSS, Streamlit. Reusable components, form validation, responsive layouts and dashboards.</p></article>
+    <article class="card"><h3>Systems behind the screen</h3><p>Java, Spring Boot, Node.js, REST APIs, JWT authentication, PostgreSQL, MongoDB, WebSockets, MQTT, Docker.</p></article>
+  </div>
+  <p class="ph">[PLACEHOLDER: add any design tools you have actually used, such as Figma, only if true.]</p>
+</section>
+
+<section id="process" class="wrap">
+  <h2>My design process</h2>
+  <p class="sub">The approach I follow when I plan a feature. It is a working method, not a claim of professional design experience.</p>
+  <ol class="steps">
+    <li><h3>Understand the person</h3><p>Write down who uses it, what they are trying to do, and what goes wrong today.</p></li>
+    <li><h3>Define the problem</h3><p>Turn it into one clear sentence and a few testable requirements.</p></li>
+    <li><h3>Sketch and structure</h3><p>Plan the flow and data first, then the screens.</p></li>
+    <li><h3>Build and use AI carefully</h3><p>Prefer predictable logic where it works; add machine learning where it helps, and show the reasons behind its output.</p></li>
+    <li><h3>Test and refine</h3><p>Check on mobile and with a keyboard, fix what confuses, and write down what I learned.</p></li>
+  </ol>
+</section>
+
+<section id="contact" class="wrap contact">
+  <h2>Contact</h2>
+  <p class="sub">Happy to share more detail on any project.</p>
+  <div id="contact-links" class="actions"></div>
+</section>
+</main>
+<footer class="wrap foot">© <span id="yr"></span> Kumari Palak. Built with plain HTML, CSS and JavaScript.</footer>
+<script src="script.js"></script>
+</body>
+</html>
